@@ -1,10 +1,11 @@
-package factura_mal.model;
+package factura_factoria.model;
 
-public class FacturaConIvaReducido {
+public class FacturaConIvaMasDescuentoNavidad {
+
 	private int numero;
 	private Double importe;
 
-	public FacturaConIvaReducido(int numero, Double importe) {
+	public FacturaConIvaMasDescuentoNavidad(int numero, Double importe) {
 		super();
 		this.numero = numero;
 		this.importe = importe;

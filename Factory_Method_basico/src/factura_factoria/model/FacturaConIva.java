@@ -1,11 +1,10 @@
-package model;
+package factura_factoria.model;
 
-public class FacturaConIvaYDescuentoFamiliaNumerosa {
-
+public class FacturaConIva {
 	private int numero;
 	private Double importe;
 
-	public FacturaConIvaYDescuentoFamiliaNumerosa(int numero, Double importe) {
+	public FacturaConIva(int numero, Double importe) {
 		super();
 		this.numero = numero;
 		this.importe = importe;

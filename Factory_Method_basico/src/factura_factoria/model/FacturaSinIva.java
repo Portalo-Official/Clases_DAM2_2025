@@ -1,5 +1,5 @@
 
-package model;
+package factura_factoria.model;
 
 public class FacturaSinIva {
 	
