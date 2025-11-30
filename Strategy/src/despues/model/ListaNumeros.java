@@ -25,4 +25,7 @@ public class ListaNumeros {
 		return this.numeros;
 	}
 	
+	public void cambiarComportamiento(SortStrategy sortStrategy) {
+		this.sortStrategy = sortStrategy;
+	}
 }

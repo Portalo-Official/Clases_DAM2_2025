@@ -7,7 +7,8 @@ import despues.sort.impl.CountingSort;
 import despues.sort.impl.QuickSort;
 
 public class SortFactory {
-
+		
+	// Esto no es un Factyory Method, es un SimpleFactory
 	   public static SortStrategy createSortStrategy(String tipoOrdenacion) {
 
 		   SortStrategy sortAlgorithm;

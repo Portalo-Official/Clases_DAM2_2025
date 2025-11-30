@@ -21,10 +21,6 @@ public class App {
 		// Inyectamos strategy desde fuera desde constructor
 		ListaNumeros listaNumeros = new ListaNumeros(numeros, sortStrategy);
 		
-		
-		
-		
-		
 		System.out.println("Sin Ordenar");
 		System.out.println(Arrays.toString(listaNumeros.getNumeros()));
 		
@@ -32,7 +28,7 @@ public class App {
 		System.out.println("Ordenado");
 		
 		System.out.println(Arrays.toString(listaNumeros.getNumeros()));
-
+		
 	}
 
 }
