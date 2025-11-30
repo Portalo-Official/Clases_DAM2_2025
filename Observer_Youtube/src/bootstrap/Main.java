@@ -3,6 +3,7 @@ package bootstrap;
 import controller.YouTubeController;
 import dao.VideoDAO;
 import dao.impl.VideoDAOMemImpl;
+import event.PublisherVideo;
 import event.impl.EventPublisherInMemory;
 import observable.ObserverVideo;
 import observable.impl.IndexadorAnalytics;
@@ -16,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
         // Infra
         VideoDAO repo = new VideoDAOMemImpl();
-        EventPublisherInMemory eventBus = new EventPublisherInMemory();
+        PublisherVideo eventBus = new EventPublisherInMemory();
 
         // Observers registrados
         ObserverVideo email = new NotificadorEmail();
@@ -30,6 +31,7 @@ public class Main {
         VideoService videoService = new VideoServiceImpl(repo, eventBus);
         YouTubeController controller = new YouTubeController(videoService);
 
+        
         // “Llamada HTTP” simulada
         controller.uploadVideo("ManoloSoldador", "Como soldar el titanic en 5 min", "https://youtu.be/xyz");
     }

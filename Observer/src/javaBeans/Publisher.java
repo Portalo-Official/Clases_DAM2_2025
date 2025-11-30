@@ -31,6 +31,6 @@ public class Publisher {
 	public void setValue(String newValue) {
 		String oldValue = this.value;
 		this.value = newValue;
-		this.pcs.firePropertyChange("value", oldValue, newValue);
+		this.pcs.firePropertyChange("event_name", oldValue, newValue);
 	}
 }

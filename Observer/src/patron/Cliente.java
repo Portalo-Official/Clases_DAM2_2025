@@ -10,10 +10,11 @@ class Cliente {
 	void test() {
 		ConcretePublisher ropitaShein = new ConcretePublisher(false);
 		ConcreteSubscribers	subscriptor = new ConcreteSubscribers("Elena");
+		
 		ropitaShein.subscribe(subscriptor);
 		
 		ropitaShein.mainBusinerssLogic(false, "Cambio de descripcion");
-		
+		System.out.println("------------------------");
 		ropitaShein.mainBusinerssLogic(true, "Nuevo stcok");
 		
 	}
