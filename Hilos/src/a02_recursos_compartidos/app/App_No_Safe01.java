@@ -44,9 +44,9 @@ public class App_No_Safe01 {
 		 *
 		 * Hilo 3 lee storage[0] → 5
 		 * 
-		 * A calcula 5 + 1 → 6, lo escribe.
+		 * A calcula 5 + 1 → 6, lo escribe. => [6, 1000005, 2, 7, 8, 3]
 		 * 
-		 * B calcula 5 - 1 → 4, lo escribe.
+		 * B calcula 5 - 1 → 4, lo escribe. => [4, 1000005, 2, 7, 8, 3]
 		 */	
 		
 		

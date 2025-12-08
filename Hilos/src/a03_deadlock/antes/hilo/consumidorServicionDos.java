@@ -31,11 +31,14 @@ public class consumidorServicionDos implements Runnable{
             
             
             
-            synchronized (recursoA) {
+            synchronized (recursoA) { // Hilo2 (wait)
                 System.out.println(Thread.currentThread().getName() +
                         " bloqueó " + recursoA.getNombre());
             }
         }
+        
+        System.out.println(Thread.currentThread().getName() +
+                " Desbloqueo "+ recursoA.getNombre());
 	}
 	
 	

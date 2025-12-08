@@ -1,7 +1,5 @@
 package a02_recursos_compartidos.hilo;
 
-import java.util.Arrays;
-import java.util.Iterator;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
@@ -20,7 +18,7 @@ public class ConsumidorArray01 implements Runnable{
 		
 		int signo = (variacion > 0 ) ? 1 : -1;
 		
-		for (int i=0; i <= Math.abs(this.variacion); i ++) {
+		for (int i=0; i < Math.abs(this.variacion); i ++) {
 			
 			this.arrayStock.addAndGet(index, signo);
 			System.out.println(this.name+": "+ this.arrayStock.toString());

@@ -10,7 +10,6 @@ public class App {
 	
 	 public static void main(String[] args) {
 
-	        // Creamos dos recursos compartidos
 	        RecursoA recursoA = new RecursoA("RECURSO_A");
 	        RecursoB recursoB = new RecursoB("RECURSO_B");
 

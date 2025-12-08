@@ -27,11 +27,14 @@ public class consumidorServicionUno implements Runnable{
                     " intentando bloquear " + recursoB.getNombre() + "...");
             
             
-            synchronized (recursoB) {
+            synchronized (recursoB) { // Hilo1 (wait)
                 System.out.println(Thread.currentThread().getName() +
                         " bloqueó " + recursoB.getNombre());
             }
         }
+        
+        System.out.println(Thread.currentThread().getName() +
+                " Desbloqueo "+ recursoA.getNombre());
 	}
 	
     private void dormirUnPoco() {

@@ -32,8 +32,10 @@ public class consumidorServicionUno implements Runnable{
                System.out.println(Thread.currentThread().getName() +
                        " bloqueó " + recursoB.getNombre());
            }
-		
        }
+       
+       System.out.println(Thread.currentThread().getName() +
+               " Desbloqueo "+ recursoA.getNombre());
 	}
        
        
