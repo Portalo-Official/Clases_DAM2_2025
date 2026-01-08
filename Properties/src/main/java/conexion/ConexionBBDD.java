@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import config.EnvironmentAccess;
+import config.EnvironmentAccess; 
 
 public class ConexionBBDD {
 	private static ConexionBBDD INSTANCE;

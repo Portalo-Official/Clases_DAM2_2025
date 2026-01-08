@@ -1,0 +1,14 @@
+Ejecutar docker (Tener instalado)
+
+En consola poner en la misma ruta del archivo docker-compose.yml poner: docker compose up -d
+
+Para ver phpmyadmin: 
+ - ruta: http://localhost:8081
+ - user: app
+ - pass: app123
+ - BD: employeedb
+
+Para ver adminer: 
+ - ruta: http://localhost:8080
+ - user: app
+ - pass: app123
